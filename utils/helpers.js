@@ -12,7 +12,7 @@ export function setNotificationForTomorrow() {
               Notifications.cancelAllScheduledNotificationsAsync()
 
               let tomorrow = new Date();
-              tomorrow.setDate(tomorrow.getDate());
+              tomorrow.setDate(tomorrow.getDate() + 1);
               tomorrow.setHours(18);
               tomorrow.setMinutes(15);
 
